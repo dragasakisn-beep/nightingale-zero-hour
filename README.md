@@ -1,37 +1,64 @@
-# NIGHTINGALE: ZERO HOUR
-**CIS4430 — Contractual / Regulatory Compliance | Interactive tabletop wargame**
+# NIGHTINGALE: ZERO HOUR — CIS4430 Classroom Delivery
 
-A fictional aerospace predictive-maintenance incident connects governance, third-party risk management, contractual obligations, audits, POA&Ms, NIST-aligned security planning and CMMC readiness.
+**Current format:** 60 minutes, two 20-minute gameplay turns, four cooperative departments, one human Director.
 
-## Status
-**Phase 0: public-safe, standalone facilitator demonstration.** This is not yet connected to Wargame AI; team state is stored only in the local browser session. No authentication, realtime synchronization, production-grade access control or AI model is included in this prototype. Do not use real student data.
+## Student and instructor boundaries
 
-## Try it
-Open `index.html` locally in a browser or publish this public-safe static prototype through GitHub Pages. Select **Mission Control**, **Team Workstation**, **Decision Board**, or **Director Notes**. Use demo-only simulated information.
+- **Nightingale Mission Control (GitHub Pages):** Public-safe classroom briefing, manual 60-minute timer, slide-like phase controls, demonstration decisions, and direct launch to Wargame AI.
+- **Wargame AI (Render):** Authoritative exercise state, Keycloak authentication, private intelligence distribution, team submissions, AI Red Cell controls, adjudication, turn advancement, and after-action records.
+- **No automatic synchronization exists between the websites.** Never project private packets or use the unprotected Team Workstation demo for graded student submissions.
+- The static site stores demonstration choices locally within one browser. It neither reads nor alters the authoritative game session.
 
-## The class exercise
-- Four teams: Alpha (Cyber Operations), Bravo (Legal & Contracts), Charlie (Audit & GRC), Delta (Executive & Supply Chain).
-- Five turns: Compliance Exposure; Vendor Compromise; Audit Failure; POA&M Dilemma; Executive Decision.
-- 3-hour class structure; team deliberations and instructor adjudication; post-exercise board hearing.
-- Instructor is always the adjudication authority. The AI engine may recommend but must not make binding legal or certification determinations.
+## Links
 
-## Repository contents
-- `index.html` — standalone interactive mission-control / team preview.
-- `scenario/nightingale.json` — fictional scenario and learning outcomes.
-- `docs/EXECUTION-CONCEPT.md` — classroom run of show, team responsibilities and scoring.
-- `docs/WARGAME-INTEGRATION.md` — source-backed Wargame AI integration plan, security boundaries and API mapping.
-- `docs/ROADMAP.md` — implementation backlog and test gates.
-- `.gitignore` — excludes local configuration/secrets.
+- [Nightingale classroom website](https://dragasakisn-beep.github.io/nightingale-zero-hour/)
+- [Wargame AI production gateway](https://wargame-pilot-gateway.onrender.com/)
+- [Nightingale GitHub Pages deployment](https://github.com/dragasakisn-beep/nightingale-zero-hour/actions/workflows/deploy-pages.yml)
 
-## Existing engine
-The intended integration target is [Wargame AI v41](https://github.com/dragasakisn-beep/wargame-ai-v41), whose README identifies Build 49.6.3 and documents a React/Vite, FastAPI, PostgreSQL and Keycloak stack. Reuse its authenticated exercise sessions, team membership, move submissions, Director adjudication and AAR; do not copy its private code into this public repository without an explicit review.
+## Classroom timeline
 
-## Education and legal disclaimer
-The scenario uses fictional organizations, invented events, and simulated contract data. Actual regulatory and contractual applicability must be verified from controlling requirements and contract language. A classroom score is **not** a CMMC assessment score or certification status. The instructor should validate the current CMMC rules, phase status, and references before classroom use.
+| Class time | Activity |
+|---|---|
+| 00:00–00:08 | Introduce incident, obligations, teams, scoring |
+| 00:08–00:28 | Turn 1 — THE COMPROMISE |
+| 00:28–00:30 | Director adjudication / escalation |
+| 00:30–00:50 | Turn 2 — THE COMPLIANCE RECKONING |
+| 00:50–01:00 | Four captain recommendations; executive decision and AAR |
 
-## Development milestones
-1. Static functional front-end / scenario data (this foundation).
-2. Validate Wargame AI Build 49.6.3 APIs and permissions against live OpenAPI.
-3. Implement authenticated team portal adapter and Director-only mission control.
-4. Add protected evidence vault and instructor-approved AI recommendations.
-5. Test simultaneous multi-team sessions, role isolation, audit trails and exercise recovery.
+## Teams
+
+| In-game seat | Functional department |
+|---|---|
+| Blue | Cyber Operations |
+| Red | Legal & Contracts |
+| Green | GRC / Audit |
+| White (playing seat) | Executive & Supply Chain |
+
+The Director is **not** the White playing seat. The Director is the separate control role in Wargame AI.
+
+## Instructor checklist
+
+1. Open the GitHub Pages website and confirm the **Classroom Launch** tab exists and displays a 60:00 timer.
+2. Open Wargame AI in a second, private instructor tab. Choose the Nightingale session; verify it is the **intended** classroom session, not an old rehearsal.
+3. Verify each student's Keycloak access and the captain for each playing team. If testing solo, use **Play → AI Red Cell & Forecasts → Make AI-controlled**, followed by **Generate AI move** and the Director's explicit submission.
+4. Verify private packet recipients and public Turn 1 brief. Turn 2 packets must not release early.
+5. Do not advance an actual Wargame AI turn using the GitHub Pages demo; the projector's phase selector is manual only.
+6. Adjudicate the four teams in Wargame AI and record the final executive recommendation.
+7. If internet access fails, run the public-safe demo and collect paper decisions. Clearly label those outcomes as local simulation, not Wargame AI submissions.
+
+## Scoring
+
+Legal and contractual accuracy 30%; evidence quality 25%; risk reduction 20%; business judgment 15%; cross-team coordination 10%.
+
+## Current limitations
+
+- No Keycloak integration on the public GitHub Pages site.
+- No private packet isolation on its demo Team Workstation.
+- No live read/write API connection between Nightingale and Wargame AI.
+- No automatic syncing of its classroom timer or phase selector with engine state.
+
+## Next milestone after class
+
+Integrate a read-only, backend-authorized public session projection within the existing Wargame AI gateway. Only then add team-specific workstations, captain submission, and Director controls after role-isolation tests.
+
+**Caution:** This is fictional training material. Scoring is not a legal compliance determination, CMMC assessment, or certification status.
