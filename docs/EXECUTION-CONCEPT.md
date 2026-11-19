@@ -1,52 +1,53 @@
-# CIS4430 Final Session — Execution Concept
+# CIS4430 Nightingale: Zero Hour — 60-Minute Classroom Execution Concept
 
 ## Mission
-Demonstrate that compliance is the combination of accurate obligation identification, effective security, trustworthy evidence, accountable remediation, and defensible executive judgments.
 
-## 180-minute run of show
-| Minutes | Activity |
-|---|---|
-| 0–15 | Mission Control opening: aerospace procurement readiness review interrupted |
-| 15–25 | Team assignments, rules of play, private briefs |
-| 25–45 | Turn 1: Compliance Exposure |
-| 45–65 | Turn 2: Vendor Compromise |
-| 65–85 | Turn 3: Audit Failure |
-| 85–95 | Break and director state update |
-| 95–120 | Turn 4: POA&M Dilemma |
-| 120–145 | Turn 5: Executive Decision |
-| 145–170 | Board hearing: each team defends its findings |
-| 170–180 | AAR, reflection and close |
+Students collaborate to contain a synthetic aerospace third-party incident and deliver an evidence-based contractual, regulatory, and CMMC readiness recommendation. The four participating departments represent one enterprise, not competing adversaries.
 
-## Team structure
-- **Alpha — Cyber Operations:** investigate, preserve evidence, recommend response actions.
-- **Bravo — Legal & Contracts:** classify obligations; review flowdowns, notification and contract language.
-- **Charlie — Audit & GRC:** audit scope, evidence validity, gap analysis, POA&M and SSP.
-- **Delta — Executive & Supply Chain:** vendor dependency, risk appetite, continuity and truthful decisions.
+## Exercise structure
 
-Each team appoints a captain to submit decisions. All other members support analysis. Director/White Cell releases injects, rules on consequences and has final decision authority.
+- **Duration:** 60 minutes
+- **Turns:** 2 × 20 minutes
+- **Teams:** Blue (Cyber Operations), Red (Legal & Contracts), Green (Audit / GRC), White (Executive & Supply Chain)
+- **Director:** Separate instructor White Cell; this is not the White playing team
+- **Submission:** One official move per team, per turn, through the captain; Director adjudicates
+- **Time compression:** Fictional scenario's 72-hour contracting window is not the classroom wall clock
 
-## Turn procedure
-1. Director publishes common incident update (2 min).
-2. Teams receive authorized private intelligence (2 min).
-3. Teams examine evidence and request coordination (8–12 min).
-4. Captains provide action, rationale, evidence, owner and expected consequences (3 min).
-5. Director adjudicates; AI recommendations are advisory only (3 min).
-6. Director releases public consequences and next turn conditions.
+| Minutes | Activity | Instructor action |
+|---|---|---|
+| 00–08 | Opening briefing | Show public Nightingale mission graphic, assign roles, review obligation-versus-framework distinction |
+| 08–28 | Turn 1: THE COMPROMISE | Release authorized Turn 1 packets, facilitate containment / evidence / contractual coordination, review one move per team |
+| 28–30 | Turn transition | Adjudicate or communicate Turn 1 consequences; reveal approved escalation |
+| 30–50 | Turn 2: THE COMPLIANCE RECKONING | Release audit findings, SSP discrepancies, control gaps and POA&M decision points; adjudicate recommendations |
+| 50–60 | Executive briefing and AAR | Give four captains 90 seconds each, followed by 4 minutes to summarize risk, obligations and remediation |
 
-## Evidence
-Use synthetic vendor agreements, control test results, access logs, data-flow diagrams, audit findings, SSP excerpts and remediation documents. Keep private team packets protected in backend storage once multiuser features exist. **Do not store unreleased private packets in a public static frontend** for a live graded exercise.
+## Instructor presentation versus actual game state
 
-## Instructor rubric (100-point scale)
-- Legal and contractual interpretation 30
-- Quality and validity of evidence 25
-- Risk reduction and proportionality 20
-- Business and operational judgment 15
-- Coordination, communication and ownership 10
+- **Nightingale GitHub Pages:** public-safe mission visual, manual clock, instructor prompts and optional local demonstrations; no authenticated live sync.
+- **Wargame AI Render:** Keycloak login, private intelligence, AI or human team control, captain or Director submissions, turn state, adjudication and AAR.
+- Only Wargame AI is authoritative. Public projections must not include private team packets.
+- AI Red Cell & Forecasts can switch an active team to AI-controlled. The Director must generate and explicitly submit AI drafts; forecasts are advisory.
 
-The standalone demo uses a simplified 0–10 decision score for demonstration; official assessment requires written justification and instructor scoring.
+## Evaluation rubric (100 points)
 
-## Board hearing
-Each team gets 3 minutes to explain its top finding, supporting evidence and recommendation, followed by a 1-minute challenge from another team. Conclude with one integrated executive decision and residual-risk statement.
+- Legal and contractual accuracy — 30
+- Evidence quality and integrity — 25
+- Risk reduction — 20
+- Business and operational judgment — 15
+- Cross-team coordination — 10
 
-## Classroom safeguards
-All entities and data are fictional. Do not imply simulated game scoring confers CMMC certification, legal compliance or contractual eligibility. Regulatory references and active contracting-phase applicability must be checked against authoritative sources before instruction.
+## Turn 1 decision problem
+
+At 06:42 UTC a supplier API credential is linked to anomalous F-35 maintenance telemetry; SecureSky disputes a breach and cites model drift. Students must balance containment, evidentiary preservation, vendor due diligence, contractual duties and continuity. Exfiltration is unconfirmed at opening.
+
+## Turn 2 decision problem
+
+The audit discovers SSP and vendor-access discrepancies, incomplete control evidence and unresolved deficiencies. Students must distinguish corrective actions from compliance status, validate whether any proposed POA&M is permissible under controlling CMMC requirements, and prepare truthful readiness representations.
+
+## Classroom contingencies
+
+If the engine becomes unavailable, display the public-safe Nightingale website, collect paper moves, and clearly label the exercise as offline. Do not present local website scores as engine adjudications or certification results. Prepare a projected copy of the opening scenario before students arrive.
+
+## Regulatory caution
+
+This is fictional training; actual legal notification triggers, contractual terms, CMMC conditions and POA&M eligibility depend on current authoritative obligations and the relevant assessed scope. Director adjudication is a classroom judgment, not certification or legal advice.
