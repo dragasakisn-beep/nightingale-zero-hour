@@ -1,0 +1,171 @@
+{
+  "id": "nightingale-zero-hour",
+  "name": "NIGHTINGALE: ZERO HOUR",
+  "subtitle": "The Compliance Crisis",
+  "fictional": true,
+  "course": "CIS4430",
+  "duration_minutes": 180,
+  "teams": [
+    {
+      "id": "alpha",
+      "name": "Alpha",
+      "function": "Cybersecurity Operations",
+      "objective": "Contain, investigate, preserve forensic evidence",
+      "intel": "A vendor account accessed an unusual dataset; no confirmed exfiltration."
+    },
+    {
+      "id": "bravo",
+      "name": "Bravo",
+      "function": "Legal & Contracts",
+      "objective": "Identify applicable obligations and contractual reporting requirements",
+      "intel": "A supplier agreement lacks explicit notification timing; defense contract flowdowns require review."
+    },
+    {
+      "id": "charlie",
+      "name": "Charlie",
+      "function": "Audit & GRC",
+      "objective": "Reconcile evidence, SSP accuracy and remediation",
+      "intel": "Some access-control evidence is outdated; SSP remote-access description is incomplete."
+    },
+    {
+      "id": "delta",
+      "name": "Delta",
+      "function": "Executive & Supply Chain",
+      "objective": "Balance continuity, supplier dependency and truthful contract commitments",
+      "intel": "A simulated $8 million opportunity faces a 72-hour bid window."
+    }
+  ],
+  "turns": [
+    {
+      "id": 1,
+      "name": "Compliance Exposure",
+      "time": "T–72h",
+      "prompt": "The team discovers defense-related information, a European analytics supplier and a Florida business unit. Leadership assumes every framework is mandatory.",
+      "question": "How should Nightingale determine its obligations?",
+      "options": [
+        {
+          "label": "Build applicability matrix",
+          "score": 10,
+          "impact": "Verified scope is established; leadership requests supporting evidence."
+        },
+        {
+          "label": "Treat every framework as mandatory",
+          "score": 3,
+          "impact": "Resources are diverted; mandatory requirements remain ambiguous."
+        },
+        {
+          "label": "Rely on supplier assurance",
+          "score": 0,
+          "impact": "The organization cannot demonstrate its own compliance."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vendor Compromise",
+      "time": "T–48h",
+      "prompt": "A third-party maintenance account accessed a dataset beyond its approved purpose. The vendor requests uninterrupted access.",
+      "question": "How should Nightingale handle the incident?",
+      "options": [
+        {
+          "label": "Contain, preserve logs and investigate obligations",
+          "score": 10,
+          "impact": "Investigation progresses with preserved evidence and coordinated decisions."
+        },
+        {
+          "label": "Disconnect all services without assessment",
+          "score": 4,
+          "impact": "Some risks decrease but availability and evidence collection suffer."
+        },
+        {
+          "label": "Accept vendor reassurances",
+          "score": 0,
+          "impact": "Unverified access persists; reporting risk increases."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Audit Failure",
+      "time": "T–24h",
+      "prompt": "The SSP claims MFA is universal, but a legacy integration uses an undocumented service account.",
+      "question": "How should the audit finding be managed?",
+      "options": [
+        {
+          "label": "Disclose gap and validate implementation evidence",
+          "score": 10,
+          "impact": "A reliable finding and corrective action record are created."
+        },
+        {
+          "label": "Present policy as implementation evidence",
+          "score": 1,
+          "impact": "Assurance cannot substantiate operating effectiveness."
+        },
+        {
+          "label": "Avoid disclosing the discrepancy",
+          "score": 0,
+          "impact": "Evidence integrity and leadership trust deteriorate."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "POA&M Dilemma",
+      "time": "T–12h",
+      "prompt": "Leadership proposes placing every unmet CMMC requirement on a POA&M and claiming conditional status.",
+      "question": "What should the team recommend?",
+      "options": [
+        {
+          "label": "Validate each unmet requirement against current CMMC rules",
+          "score": 10,
+          "impact": "The team avoids an unsupported conditional status assertion."
+        },
+        {
+          "label": "Place all unmet requirements on a universal POA&M",
+          "score": 0,
+          "impact": "The claim may conflict with mandatory eligibility restrictions."
+        },
+        {
+          "label": "Defer findings until after award",
+          "score": 0,
+          "impact": "Unresolved deficiencies remain with no defensible plan."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Executive Decision",
+      "time": "T–0h",
+      "prompt": "The contract decision is due. Incident scope and assessment eligibility remain unresolved.",
+      "question": "What should management communicate?",
+      "options": [
+        {
+          "label": "Present a verified, condition-based recommendation",
+          "score": 10,
+          "impact": "Leadership acts on documented limits, gates and accountable decisions."
+        },
+        {
+          "label": "Sign an unqualified readiness declaration",
+          "score": 0,
+          "impact": "The organization makes an unsupported representation."
+        },
+        {
+          "label": "Permanently halt all operations",
+          "score": 3,
+          "impact": "Overbroad response may be disproportionate to established evidence."
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "per_turn_max": 10,
+    "weights": {
+      "legal_contract_accuracy": 30,
+      "evidence": 25,
+      "risk_reduction": 20,
+      "business_judgment": 15,
+      "coordination": 10
+    },
+    "note": "Prototype decision scores do not replace instructor scoring and are not actual CMMC assessment scores."
+  }
+}
